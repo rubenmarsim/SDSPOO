@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Calculs_GUTISA
 {
-    public class IVA
+    public class IVA 
     {
-
+        
     }
 }
