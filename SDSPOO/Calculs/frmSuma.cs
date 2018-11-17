@@ -16,5 +16,17 @@ namespace Calculs
         {
             InitializeComponent();
         }
+
+        public int Sumar()
+        {
+            int result;
+            result = int.Parse(txtBoxNum1.Text) + int.Parse(txtBoxNum2.Text);
+            return result;
+        }
+
+        private void btnSuma_Click(object sender, EventArgs e)
+        {
+            txtBoxTotal.Text = Sumar().ToString();
+        }
     }
 }
