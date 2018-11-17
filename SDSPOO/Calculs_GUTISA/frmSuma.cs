@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Calculs_GUTISA
 {
-    public partial class frmSuma : Form
+    public partial class frmSuma : Calculs.frmSuma
     {
         public frmSuma()
         {

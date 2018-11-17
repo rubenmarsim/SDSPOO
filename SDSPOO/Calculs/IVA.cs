@@ -33,24 +33,24 @@ namespace Calculs
         {
             this._importe = propImporte;
         }
-        public double CalculaIVA(double valorX)
+        public double CalculaIVA(double importe)
         {
             double dResultadoIVA = 0;
-            dResultadoIVA += valorX * 0.21;
+            dResultadoIVA += importe * 0.21;
             return dResultadoIVA;
         }
 
-        public double CalculaIVA(double valorX, int valorY)
+        public double CalculaIVA(double importe, int valorY)
         {
             double dResultadoIVA = 0;
-            dResultadoIVA += valorX * (valorY / 100);
+            dResultadoIVA += importe * (valorY / 100);
             return dResultadoIVA;
         }
 
-        virtual public double Beneficis(double valorB)
+        virtual public double Beneficis(double benefici)
         {
             double dResultadoBenefici = 0;
-            dResultadoBenefici += valorB * 0.33;
+            dResultadoBenefici += benefici * 0.33;
             return dResultadoBenefici;
         }
     }

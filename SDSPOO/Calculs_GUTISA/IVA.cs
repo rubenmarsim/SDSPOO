@@ -23,13 +23,14 @@ namespace Calculs_GUTISA
         //{
 
         //}
+        
 
         //public override void Beneficis(double ValorB)
         //{
 
         //}
 
-        IVA holaa = new IVA();
+        
 
     }
 }

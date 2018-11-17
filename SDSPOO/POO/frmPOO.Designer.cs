@@ -170,6 +170,7 @@
             this.btnCalculaIVA1.TabIndex = 14;
             this.btnCalculaIVA1.Text = "CalcularIVA #1";
             this.btnCalculaIVA1.UseVisualStyleBackColor = true;
+            this.btnCalculaIVA1.Click += new System.EventHandler(this.btnCalculaIVA1_Click);
             // 
             // btnCalculaIVA2
             // 
@@ -179,6 +180,7 @@
             this.btnCalculaIVA2.TabIndex = 15;
             this.btnCalculaIVA2.Text = "CalcularIVA #2";
             this.btnCalculaIVA2.UseVisualStyleBackColor = true;
+            this.btnCalculaIVA2.Click += new System.EventHandler(this.btnCalculaIVA2_Click);
             // 
             // btnCalculaIVA3
             // 

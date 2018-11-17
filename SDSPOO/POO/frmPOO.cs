@@ -28,6 +28,17 @@ namespace POO
         Saluda CSaluda = new Benvinguda.Saluda();
         #endregion
 
+        #region Metodos
+
+        public void PasarValoresaProps()
+        {
+            CCalculs.propImporte = double.Parse(txtBoxImport.Text);
+            CCalculs.propIVA = int.Parse(txtBoxIVA.Text);
+            //CalculsfrmSuma_Gutisa.CalculaIVA = 
+        }
+
+        #endregion
+
         private void btnSuma_Click(object sender, EventArgs e)
         {
             CalculsfrmSuma.Show();
@@ -40,9 +51,20 @@ namespace POO
 
         private void frmPOO_Load(object sender, EventArgs e)
         {
-            CCalculs.propImporte = int.Parse(txtBoxImport.Text);
-            CCalculs.propIVA = int.Parse(txtBoxIVA.Text);
+
             CCalculs.propTipusIVA = txtBoxTipusIVA.Text;
+        }
+
+        private void btnCalculaIVA1_Click(object sender, EventArgs e)
+        {
+            PasarValoresaProps();
+            CCalculs.CalculaIVA(double.Parse(txtBoxImport.Text));
+        }
+
+        private void btnCalculaIVA2_Click(object sender, EventArgs e)
+        {
+            PasarValoresaProps();
+            CCalculs.CalculaIVA(double.Parse(txtBoxImport.Text), int.Parse(txtBoxIVA.Text));
         }
     }
 }
