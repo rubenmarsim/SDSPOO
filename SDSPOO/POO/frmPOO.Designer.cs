@@ -207,6 +207,7 @@
             this.btnSumaGutisa.TabIndex = 18;
             this.btnSumaGutisa.Text = "Suma Gutisa";
             this.btnSumaGutisa.UseVisualStyleBackColor = true;
+            this.btnSumaGutisa.Click += new System.EventHandler(this.btnSumaGutisa_Click);
             // 
             // btnBeneficis
             // 

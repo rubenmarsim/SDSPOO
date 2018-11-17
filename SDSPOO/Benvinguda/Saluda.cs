@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Benvinguda
 {
-    class Saluda
+    public class Saluda
     {
+
     }
 }
