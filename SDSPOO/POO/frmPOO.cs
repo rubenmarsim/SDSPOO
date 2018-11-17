@@ -23,6 +23,7 @@ namespace POO
 
         #region Instancias
         Calculs.frmSuma CalculsfrmSuma = new Calculs.frmSuma();
+        Calculs.IVA CCalculs = new Calculs.IVA();
         CGutisa.frmSuma CalculsfrmSuma_Gutisa = new CGutisa.frmSuma();
         Saluda CSaluda = new Benvinguda.Saluda();
         #endregion
@@ -39,7 +40,9 @@ namespace POO
 
         private void frmPOO_Load(object sender, EventArgs e)
         {
-            //Importe = txtBoxImport.Text;
+            CCalculs.propImporte = int.Parse(txtBoxImport.Text);
+            CCalculs.propIVA = int.Parse(txtBoxIVA.Text);
+            CCalculs.propTipusIVA = txtBoxTipusIVA.Text;
         }
     }
 }

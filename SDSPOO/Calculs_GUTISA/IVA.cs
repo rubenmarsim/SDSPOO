@@ -15,5 +15,9 @@ namespace Calculs_GUTISA
         //{
 
         //}
+        Calculs.IVA hola = new Calculs.IVA();
+
+        //hola.
+        
     }
 }

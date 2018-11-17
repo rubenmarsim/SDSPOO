@@ -9,16 +9,29 @@ namespace Calculs
     public class IVA
     {
         private double _importe;
-
-        public double Importe
+        public double propImporte
         {
             get { return _importe; }
             set { _importe = value; }
         }
-        //public PasarValores(double importe)
-        //{
-        //    importe = 
-        //}
+
+        private int _iva;
+        public int propIVA
+        {
+            get { return _iva; }
+            set { _iva = value; }
+        }
+        private string _TipusIVA;
+        public string propTipusIVA
+        {
+            get { return _TipusIVA; }
+            set { _TipusIVA = value; }
+        }
+
+        public IVA()
+        {
+            this._importe = propImporte;
+        }
         public double CalculaIVA(double valorX)
         {
             double dResultadoIVA = 0;
