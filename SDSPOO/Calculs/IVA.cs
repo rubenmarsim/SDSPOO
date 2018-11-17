@@ -18,7 +18,7 @@ namespace Calculs
         public double CalculaIVA(double valorX, int valorY)
         {
             double dResultadoIVA = 0;
-
+            dResultadoIVA += valorX * (valorY / 100);
             return dResultadoIVA;
         }
 
