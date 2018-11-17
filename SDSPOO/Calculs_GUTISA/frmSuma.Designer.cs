@@ -87,7 +87,7 @@
             // 
             // btnSuma_Gutisa
             // 
-            this.btnSuma_Gutisa.Location = new System.Drawing.Point(432, 274);
+            this.btnSuma_Gutisa.Location = new System.Drawing.Point(408, 274);
             this.btnSuma_Gutisa.Name = "btnSuma_Gutisa";
             this.btnSuma_Gutisa.Size = new System.Drawing.Size(123, 23);
             this.btnSuma_Gutisa.TabIndex = 5;
