@@ -8,6 +8,17 @@ namespace Calculs
 {
     public class IVA
     {
+        private double _importe;
+
+        public double Importe
+        {
+            get { return _importe; }
+            set { _importe = value; }
+        }
+        //public PasarValores(double importe)
+        //{
+        //    importe = 
+        //}
         public double CalculaIVA(double valorX)
         {
             double dResultadoIVA = 0;

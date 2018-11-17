@@ -36,5 +36,10 @@ namespace POO
         {
             CalculsfrmSuma_Gutisa.Show();
         }
+
+        private void frmPOO_Load(object sender, EventArgs e)
+        {
+            //Importe = txtBoxImport.Text;
+        }
     }
 }

@@ -265,6 +265,7 @@
             this.Controls.Add(this.lblImport);
             this.Name = "frmPOO";
             this.Text = "frmPOO";
+            this.Load += new System.EventHandler(this.frmPOO_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
