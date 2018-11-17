@@ -7,7 +7,7 @@
     <ProjectGuid>{17A622F0-C5B8-4B13-8CF5-49752DDCFEAC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>Benvinguda</RootNamespace>
-    <AssemblyName>Benvinguda</AssemblyName>
+    <AssemblyName>Hola</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -16,7 +16,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\DLL\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
