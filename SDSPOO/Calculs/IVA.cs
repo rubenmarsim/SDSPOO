@@ -8,13 +8,13 @@ namespace Calculs
 {
     public class IVA
     {
+        #region Properties
         private double _importe;
         public double propImporte
         {
             get { return _importe; }
             set { _importe = value; }
         }
-
         private int _iva;
         public int propIVA
         {
@@ -27,6 +27,7 @@ namespace Calculs
             get { return _TipusIVA; }
             set { _TipusIVA = value; }
         }
+        #endregion
 
         public IVA()
         {
@@ -46,7 +47,7 @@ namespace Calculs
             return dResultadoIVA;
         }
 
-        public double Beneficis(double valorB)
+        virtual public double Beneficis(double valorB)
         {
             double dResultadoBenefici = 0;
             dResultadoBenefici += valorB * 0.33;

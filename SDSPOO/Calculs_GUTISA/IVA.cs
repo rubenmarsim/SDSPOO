@@ -15,9 +15,21 @@ namespace Calculs_GUTISA
         //{
 
         //}
-        Calculs.IVA hola = new Calculs.IVA();
+        Calculs.IVA hola; /*= new Calculs.IVA();*/
 
-        //hola.
-        
+        //hola.propIVA
+
+        //public double Calculs.IVA.Beneficis(double ValorB)
+        //{
+
+        //}
+
+        //public override void Beneficis(double ValorB)
+        //{
+
+        //}
+
+        IVA holaa = new IVA();
+
     }
 }
