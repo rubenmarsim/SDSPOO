@@ -15,13 +15,17 @@ namespace POO
 {
     public partial class frmPOO : Form
     {
-        Calculs.frmSuma CalculsfrmSuma = new Calculs.frmSuma();
-        CGutisa.frmSuma CalculsfrmSuma_Gutisa = new CGutisa.frmSuma();
-        Saluda CSaluda = new Benvinguda.Saluda();
+        
         public frmPOO()
         {
             InitializeComponent();
         }
+
+        #region Instancias
+        Calculs.frmSuma CalculsfrmSuma = new Calculs.frmSuma();
+        CGutisa.frmSuma CalculsfrmSuma_Gutisa = new CGutisa.frmSuma();
+        Saluda CSaluda = new Benvinguda.Saluda();
+        #endregion
 
         private void btnSuma_Click(object sender, EventArgs e)
         {
