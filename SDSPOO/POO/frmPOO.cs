@@ -30,7 +30,7 @@ namespace POO
 
         private void btnSumaGutisa_Click(object sender, EventArgs e)
         {
-
+            CalculsfrmSuma_Gutisa.Show();
         }
     }
 }
