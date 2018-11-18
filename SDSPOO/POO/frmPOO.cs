@@ -71,5 +71,14 @@ namespace POO
             txtBoxBeneficis.Text = CCalculs_Gutisa.BeneficisNormals(double.Parse(txtBoxImport.Text)).ToString();
             txtBoxBeneficis2.Text = CCalculs_Gutisa.Beneficis(double.Parse(txtBoxImport.Text)).ToString();
         }
+        private void btnBenvinguda_Click(object sender, EventArgs e)
+        {
+                CSaluda.oCatalan = "Catalan";
+                CSaluda.oCastellano = "Castellano";
+                CSaluda.oIngles = "Ingles";
+                menuStrip1.Items.Add(CSaluda.oCatalan);
+                menuStrip1.Items.Add(CSaluda.oCastellano);
+                menuStrip1.Items.Add(CSaluda.oIngles);
+        }
     }
 }

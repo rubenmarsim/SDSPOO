@@ -50,6 +50,7 @@
             this.btnBeneficis = new System.Windows.Forms.Button();
             this.btnBeneficis2 = new System.Windows.Forms.Button();
             this.btnBenvinguda = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.SuspendLayout();
             // 
             // lblImport
@@ -240,6 +241,15 @@
             this.btnBenvinguda.TabIndex = 21;
             this.btnBenvinguda.Text = "Benvinguda";
             this.btnBenvinguda.UseVisualStyleBackColor = true;
+            this.btnBenvinguda.Click += new System.EventHandler(this.btnBenvinguda_Click);
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.TabIndex = 22;
+            this.menuStrip1.Text = "menuStrip1";
             // 
             // frmPOO
             // 
@@ -268,6 +278,8 @@
             this.Controls.Add(this.lblTipusIVA);
             this.Controls.Add(this.lblIVA);
             this.Controls.Add(this.lblImport);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmPOO";
             this.Text = "frmPOO";
             this.Load += new System.EventHandler(this.frmPOO_Load);
@@ -300,6 +312,7 @@
         private System.Windows.Forms.Button btnBeneficis;
         private System.Windows.Forms.Button btnBeneficis2;
         private System.Windows.Forms.Button btnBenvinguda;
+        private System.Windows.Forms.MenuStrip menuStrip1;
     }
 }
 
