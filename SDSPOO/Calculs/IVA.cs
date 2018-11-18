@@ -8,31 +8,6 @@ namespace Calculs
 {
     public class IVA
     {
-        #region Properties
-        //private double _importe;
-        //public double propImporte
-        //{
-        //    get { return _importe; }
-        //    set { _importe = value; }
-        //}
-        //private int _iva;
-        //public int propIVA
-        //{
-        //    get { return _iva; }
-        //    set { _iva = value; }
-        //}
-        //private string _TipusIVA;
-        //public string propTipusIVA
-        //{
-        //    get { return _TipusIVA; }
-        //    set { _TipusIVA = value; }
-        //}
-        #endregion
-
-        //public IVA()
-        //{
-        //    this._importe = propImporte;
-        //}
         public double CalculaIVA(double importe)
         {
             double dResultadoIVA = 0;
