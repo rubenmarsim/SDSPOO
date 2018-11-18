@@ -16,5 +16,17 @@ namespace Calculs_GUTISA
         {
             InitializeComponent();
         }
+        public double Sumar(int intPercent)
+        {
+            double result;
+            result = int.Parse(txtBoxPercentatge.Text) / 100;
+            return result;
+        }
+
+        private void btnSuma_Gutisa_Click(object sender, EventArgs e)
+        {
+            //Sumar() * Sumar(int.Parse(txtBoxPercentatge.Text));
+            txtBoxPercentatge.Text = Sumar(int.Parse(txtBoxPercentatge.Text)).ToString();
+        }
     }
 }

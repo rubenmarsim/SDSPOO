@@ -50,6 +50,7 @@
             this.btnSuma_Gutisa.TabIndex = 5;
             this.btnSuma_Gutisa.Text = "Suma GUTISA";
             this.btnSuma_Gutisa.UseVisualStyleBackColor = true;
+            this.btnSuma_Gutisa.Click += new System.EventHandler(this.btnSuma_Gutisa_Click);
             // 
             // txtBoxPercentatge
             // 

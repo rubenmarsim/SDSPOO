@@ -26,5 +26,14 @@ namespace Calculs_GUTISA
             }
             return dResultadoIVA;
         }
+        public override double Beneficis(double importe)
+        {
+
+            return base.Beneficis(importe);
+        }
+        //public double BeneficisNormals()
+        //{
+
+        //}
     }
 }
