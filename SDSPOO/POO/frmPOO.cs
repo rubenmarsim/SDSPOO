@@ -74,5 +74,10 @@ namespace POO
             txtBoxValorIVA2.Text = CCalculs_Gutisa.CalculaIVA(double.Parse(txtBoxImport.Text), int.Parse(txtBoxIVA.Text)).ToString();
             txtBoxValorIVA3.Text = CCalculs_Gutisa.CalculaIVA(double.Parse(txtBoxImport.Text), txtBoxTipusIVA.Text).ToString();
         }
+
+        private void btnBeneficis_Click(object sender, EventArgs e)
+        {
+            txtBoxBeneficis.Text = CCalculs.Beneficis(double.Parse(txtBoxImport.Text)).ToString();
+        }
     }
 }

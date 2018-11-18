@@ -47,10 +47,10 @@ namespace Calculs
             return dResultadoIVA;
         }
 
-        virtual public double Beneficis(double benefici)
+        virtual public double Beneficis(double importe)
         {
             double dResultadoBenefici = 0;
-            dResultadoBenefici = benefici * 0.33;
+            dResultadoBenefici = importe * 0.33;
             return dResultadoBenefici;
         }
     }
