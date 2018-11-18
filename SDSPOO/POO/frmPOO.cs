@@ -102,7 +102,14 @@ namespace POO
         {
             txtBoxValorIVA1.Text = CCalculs_Gutisa.CalculaIVA(double.Parse(txtBoxImport.Text)).ToString();
             txtBoxValorIVA2.Text = CCalculs_Gutisa.CalculaIVA(double.Parse(txtBoxImport.Text), int.Parse(txtBoxIVA.Text)).ToString();
-            txtBoxValorIVA3.Text = CCalculs_Gutisa.CalculaIVA(double.Parse(txtBoxImport.Text), txtBoxTipusIVA.Text.ToUpper()).ToString();
+            if (txtBoxTipusIVA.Text.ToUpper().Equals("N")|| txtBoxTipusIVA.Text.ToUpper().Equals("R")|| txtBoxTipusIVA.Text.ToUpper().Equals("SR"))
+            {
+                txtBoxValorIVA3.Text = CCalculs_Gutisa.CalculaIVA(double.Parse(txtBoxImport.Text), txtBoxTipusIVA.Text.ToUpper()).ToString();
+            }
+            else
+            {
+                MessageBox.Show("Introduce uno de estos tres valores: N, R y SR");
+            }
         }
 
         private void btnBeneficis_Click(object sender, EventArgs e)
