@@ -230,6 +230,7 @@
             this.btnBeneficis2.TabIndex = 20;
             this.btnBeneficis2.Text = "Beneficis #2";
             this.btnBeneficis2.UseVisualStyleBackColor = true;
+            this.btnBeneficis2.Click += new System.EventHandler(this.btnBeneficis2_Click);
             // 
             // btnBenvinguda
             // 

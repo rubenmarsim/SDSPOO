@@ -28,12 +28,13 @@ namespace Calculs_GUTISA
         }
         public override double Beneficis(double importe)
         {
-
+            double dResultadoBenefici;
+            dResultadoBenefici = importe * 0.45;
+            return dResultadoBenefici;
+        }
+        public double BeneficisNormals(double importe)
+        {
             return base.Beneficis(importe);
         }
-        //public double BeneficisNormals()
-        //{
-
-        //}
     }
 }

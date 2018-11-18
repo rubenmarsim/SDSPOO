@@ -79,5 +79,11 @@ namespace POO
         {
             txtBoxBeneficis.Text = CCalculs.Beneficis(double.Parse(txtBoxImport.Text)).ToString();
         }
+
+        private void btnBeneficis2_Click(object sender, EventArgs e)
+        {
+            txtBoxBeneficis.Text = CCalculs_Gutisa.BeneficisNormals(double.Parse(txtBoxImport.Text)).ToString();
+            txtBoxBeneficis2.Text = CCalculs_Gutisa.Beneficis(double.Parse(txtBoxImport.Text)).ToString();
+        }
     }
 }
