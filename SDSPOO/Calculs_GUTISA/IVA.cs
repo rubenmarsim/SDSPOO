@@ -9,28 +9,22 @@ namespace Calculs_GUTISA
 {
     public class IVA : Calculs.IVA
     {
-        //CalculaIVA a = new CalculaIVA(10);
-        //Calculs.IVA.
-        //public CalculaIVA(double ValorX):base(ValorX)
-        //{
-
-        //}
-        Calculs.IVA hola; /*= new Calculs.IVA();*/
-
-        //hola.propIVA
-
-        //public double Calculs.IVA.Beneficis(double ValorB)
-        //{
-
-        //}
-        
-
-        //public override void Beneficis(double ValorB)
-        //{
-
-        //}
-
-        
-
+        public double CalculaIVA(double importe, string TipusIVA)
+        {
+            double dResultadoIVA = 0;
+            if (TipusIVA.Equals("N"))
+            {
+                dResultadoIVA = importe * 0.21;
+            }
+            else if (TipusIVA.Equals("R"))
+            {
+                dResultadoIVA = importe * 0.12;
+            }
+            else if (TipusIVA.Equals("SR"))
+            {
+                dResultadoIVA = importe * 0.07;
+            }
+            return dResultadoIVA;
+        }
     }
 }

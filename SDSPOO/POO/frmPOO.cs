@@ -25,17 +25,18 @@ namespace POO
         Calculs.frmSuma CalculsfrmSuma = new Calculs.frmSuma();
         Calculs.IVA CCalculs = new Calculs.IVA();
         CGutisa.frmSuma CalculsfrmSuma_Gutisa = new CGutisa.frmSuma();
+        CGutisa.IVA CCalculs_Gutisa = new CGutisa.IVA();
         Saluda CSaluda = new Benvinguda.Saluda();
         #endregion
 
         #region Metodos
 
-        public void PasarValoresaProps()
-        {
-            CCalculs.propImporte = double.Parse(txtBoxImport.Text);
-            CCalculs.propIVA = int.Parse(txtBoxIVA.Text);
-            //CalculsfrmSuma_Gutisa.CalculaIVA = 
-        }
+        //public void PasarValoresaProps()
+        //{
+        //    CCalculs.propImporte = double.Parse(txtBoxImport.Text);
+        //    CCalculs.propIVA = int.Parse(txtBoxIVA.Text);
+        //    //CalculsfrmSuma_Gutisa.CalculaIVA = 
+        //}
 
         #endregion
 
@@ -52,19 +53,26 @@ namespace POO
         private void frmPOO_Load(object sender, EventArgs e)
         {
 
-            CCalculs.propTipusIVA = txtBoxTipusIVA.Text;
+            //CCalculs.propTipusIVA = txtBoxTipusIVA.Text;
         }
 
         private void btnCalculaIVA1_Click(object sender, EventArgs e)
         {
-            PasarValoresaProps();
-            CCalculs.CalculaIVA(double.Parse(txtBoxImport.Text));
+            //PasarValoresaProps();
+            txtBoxValorIVA1.Text = CCalculs.CalculaIVA(double.Parse(txtBoxImport.Text)).ToString();
         }
 
         private void btnCalculaIVA2_Click(object sender, EventArgs e)
         {
-            PasarValoresaProps();
-            CCalculs.CalculaIVA(double.Parse(txtBoxImport.Text), int.Parse(txtBoxIVA.Text));
+            //PasarValoresaProps();
+            txtBoxValorIVA2.Text = CCalculs.CalculaIVA(double.Parse(txtBoxImport.Text), int.Parse(txtBoxIVA.Text)).ToString();
+        }
+
+        private void btnCalculaIVA3_Click(object sender, EventArgs e)
+        {
+            txtBoxValorIVA1.Text = CCalculs_Gutisa.CalculaIVA(double.Parse(txtBoxImport.Text)).ToString();
+            txtBoxValorIVA2.Text = CCalculs_Gutisa.CalculaIVA(double.Parse(txtBoxImport.Text), int.Parse(txtBoxIVA.Text)).ToString();
+            txtBoxValorIVA3.Text = CCalculs_Gutisa.CalculaIVA(double.Parse(txtBoxImport.Text), txtBoxTipusIVA.Text).ToString();
         }
     }
 }
