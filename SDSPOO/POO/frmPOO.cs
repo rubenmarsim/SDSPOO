@@ -72,6 +72,7 @@ namespace POO
 
         #endregion
 
+        #region Eventos
         private void btnSuma_Click(object sender, EventArgs e)
         {
             CalculsfrmSuma.Show();
@@ -101,7 +102,7 @@ namespace POO
         {
             txtBoxValorIVA1.Text = CCalculs_Gutisa.CalculaIVA(double.Parse(txtBoxImport.Text)).ToString();
             txtBoxValorIVA2.Text = CCalculs_Gutisa.CalculaIVA(double.Parse(txtBoxImport.Text), int.Parse(txtBoxIVA.Text)).ToString();
-            txtBoxValorIVA3.Text = CCalculs_Gutisa.CalculaIVA(double.Parse(txtBoxImport.Text), txtBoxTipusIVA.Text).ToString();
+            txtBoxValorIVA3.Text = CCalculs_Gutisa.CalculaIVA(double.Parse(txtBoxImport.Text), txtBoxTipusIVA.Text.ToUpper()).ToString();
         }
 
         private void btnBeneficis_Click(object sender, EventArgs e)
@@ -118,5 +119,6 @@ namespace POO
         {
             Load_oListGetItems();
         }
+        #endregion
     }
 }
