@@ -20,7 +20,7 @@ namespace Calculs_GUTISA
         {
             double result;
             txtBoxTotal.Text = Sumar().ToString();
-            result = double.Parse(txtBoxTotal.Text) * intPercent / 100;
+            result = double.Parse(txtBoxTotal.Text) + double.Parse(txtBoxTotal.Text) * intPercent / 100;
             return result;
         }
 
