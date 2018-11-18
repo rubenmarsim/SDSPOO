@@ -15,7 +15,7 @@ namespace POO
 {
     public partial class frmPOO : Form
     {
-        
+
         public frmPOO()
         {
             InitializeComponent();
@@ -27,6 +27,49 @@ namespace POO
         CGutisa.frmSuma CalculsfrmSuma_Gutisa = new CGutisa.frmSuma();
         CGutisa.IVA CCalculs_Gutisa = new CGutisa.IVA();
         Saluda CSaluda = new Benvinguda.Saluda();
+        #endregion
+
+        #region Metodos
+
+        private List<string> oListGetItems()
+        {
+            var oListItems = new List<string>();
+            oListItems.Add("Catalan");
+            oListItems.Add("Castellano");
+            oListItems.Add("Ingles");
+            return oListItems;
+        }
+
+        private void Load_oListGetItems()
+        {
+            int id = 0;
+            foreach (string items in oListGetItems())
+            {
+                ToolStripMenuItem item = new ToolStripMenuItem(items);
+                menuStrip1.Items.Add(item);
+                item.Tag = id;
+                id++;
+                item.Click += new EventHandler(Item_Click);
+            }
+        }
+
+        private void Item_Click(object sender, EventArgs e)
+        {
+            ToolStripMenuItem item = sender as ToolStripMenuItem;
+            if (item.Text.Equals("Catalan"))
+            {
+                MessageBox.Show("Benvinguts a la Programació Orientada a Objectes");
+            }
+            else if (item.Text.Equals("Castellano"))
+            {
+                MessageBox.Show("Bienvenidos a la Programación Orientada a Objetos");
+            }
+            else if (item.Text.Equals("Ingles"))
+            {
+                MessageBox.Show("Welcome to Object Oriented Programming");
+            }
+        }
+
         #endregion
 
         private void btnSuma_Click(object sender, EventArgs e)
@@ -45,7 +88,7 @@ namespace POO
         }
 
         private void btnCalculaIVA1_Click(object sender, EventArgs e)
-        {           
+        {
             txtBoxValorIVA1.Text = CCalculs.CalculaIVA(double.Parse(txtBoxImport.Text)).ToString();
         }
 
@@ -73,44 +116,7 @@ namespace POO
         }
         private void btnBenvinguda_Click(object sender, EventArgs e)
         {
-                CSaluda.oCatalan = "Catalan";
-                CSaluda.oCastellano = "Castellano";
-                CSaluda.oIngles = "Ingles";
-                menuStrip1.Items.Add(CSaluda.oCatalan);
-                menuStrip1.Items.Add(CSaluda.oCastellano);
-                menuStrip1.Items.Add(CSaluda.oIngles);
-        }
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-            //int intvalMenu = menuStrip1.Items.Count;
-            if (menuStrip1.Items.Equals(CSaluda.oCatalan))// = CSaluda.oCatalan)
-            {
-                MessageBox.Show("Benvinguts a la Programació Orientada a Objectes");
-            }
-            else if (e.ClickedItem.Equals(CSaluda.oCastellano))
-            {
-                MessageBox.Show("Bienvenidos a la Programación Orientada a Objetos");
-            }
-            else if (menuStrip1.ProductName.Equals(CSaluda.oIngles))
-            {
-                MessageBox.Show("Welcome to Object Oriented Programming");
-            }
-            //MessageBox.Show("Welcome to Object Oriented Programming");
-            //foreach(ToolStripMenuItem item in menuStrip1.Items)
-            //{
-            //    if (menuStrip1.Items.Equals(CSaluda.oCatalan))// = CSaluda.oCatalan)
-            //    {
-            //        MessageBox.Show("Benvinguts a la Programació Orientada a Objectes");
-            //    }
-            //    else if (menuStrip1.Items.Find(CSaluda.oCastellano))
-            //    {
-            //        MessageBox.Show("Bienvenidos a la Programación Orientada a Objetos");
-            //    }
-            //    else if (menuStrip1.ProductName.Equals(CSaluda.oIngles))
-            //    {
-            //        MessageBox.Show("Welcome to Object Oriented Programming");
-            //    }
-            //}
+            Load_oListGetItems();
         }
     }
 }
