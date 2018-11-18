@@ -25,7 +25,7 @@ namespace Calculs
         virtual public double Beneficis(double importe)
         {
             double dResultadoBenefici = 0;
-            dResultadoBenefici = importe * 0.33;
+            dResultadoBenefici = importe + importe * 0.33;
             return dResultadoBenefici;
         }
     }
