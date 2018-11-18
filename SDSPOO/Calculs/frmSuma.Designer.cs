@@ -119,9 +119,9 @@
         private System.Windows.Forms.Label lblNum1;
         private System.Windows.Forms.Label lblNum2;
         private System.Windows.Forms.Label lblTotal;
-        private System.Windows.Forms.TextBox txtBoxNum1;
-        private System.Windows.Forms.TextBox txtBoxNum2;
-        private System.Windows.Forms.TextBox txtBoxTotal;
         private System.Windows.Forms.Button btnSuma;
+        public System.Windows.Forms.TextBox txtBoxNum1;
+        public System.Windows.Forms.TextBox txtBoxNum2;
+        public System.Windows.Forms.TextBox txtBoxTotal;
     }
 }
