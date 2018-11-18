@@ -250,6 +250,7 @@
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
             this.menuStrip1.TabIndex = 22;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // frmPOO
             // 
@@ -312,7 +313,7 @@
         private System.Windows.Forms.Button btnBeneficis;
         private System.Windows.Forms.Button btnBeneficis2;
         private System.Windows.Forms.Button btnBenvinguda;
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        public System.Windows.Forms.MenuStrip menuStrip1;
     }
 }
 

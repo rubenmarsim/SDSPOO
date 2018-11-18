@@ -80,5 +80,37 @@ namespace POO
                 menuStrip1.Items.Add(CSaluda.oCastellano);
                 menuStrip1.Items.Add(CSaluda.oIngles);
         }
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+            //int intvalMenu = menuStrip1.Items.Count;
+            if (menuStrip1.Items.Equals(CSaluda.oCatalan))// = CSaluda.oCatalan)
+            {
+                MessageBox.Show("Benvinguts a la Programació Orientada a Objectes");
+            }
+            else if (e.ClickedItem.Equals(CSaluda.oCastellano))
+            {
+                MessageBox.Show("Bienvenidos a la Programación Orientada a Objetos");
+            }
+            else if (menuStrip1.ProductName.Equals(CSaluda.oIngles))
+            {
+                MessageBox.Show("Welcome to Object Oriented Programming");
+            }
+            //MessageBox.Show("Welcome to Object Oriented Programming");
+            //foreach(ToolStripMenuItem item in menuStrip1.Items)
+            //{
+            //    if (menuStrip1.Items.Equals(CSaluda.oCatalan))// = CSaluda.oCatalan)
+            //    {
+            //        MessageBox.Show("Benvinguts a la Programació Orientada a Objectes");
+            //    }
+            //    else if (menuStrip1.Items.Find(CSaluda.oCastellano))
+            //    {
+            //        MessageBox.Show("Bienvenidos a la Programación Orientada a Objetos");
+            //    }
+            //    else if (menuStrip1.ProductName.Equals(CSaluda.oIngles))
+            //    {
+            //        MessageBox.Show("Welcome to Object Oriented Programming");
+            //    }
+            //}
+        }
     }
 }

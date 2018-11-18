@@ -9,6 +9,7 @@ namespace Benvinguda
 {
     public class Saluda : ToolStripMenuItem
     {
+        #region Properties
         private string _oCatalan;
 
         public string oCatalan
@@ -32,6 +33,6 @@ namespace Benvinguda
             get { return _oIngles; }
             set { _oIngles = value; }
         }
-
+        #endregion       
     }
 }
