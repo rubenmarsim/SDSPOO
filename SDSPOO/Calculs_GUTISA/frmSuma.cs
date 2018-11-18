@@ -19,6 +19,7 @@ namespace Calculs_GUTISA
         public double Sumar(int intPercent)
         {
             double result;
+            txtBoxTotal.Text = Sumar().ToString();
             result = double.Parse(txtBoxTotal.Text) * intPercent / 100;
             return result;
         }
